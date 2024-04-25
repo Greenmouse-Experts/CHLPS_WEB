@@ -21,7 +21,7 @@ import useDialog from "../../hooks/useDialog";
 import LogoutModal from "../../lib/modules/auth/logout-modal";
 
 
-const AdminDashboardLayout = () => {
+const UserDashboardLayout = () => {
   const { user } = useAuth();
   const { Dialog, setShowModal } = useDialog();
   // const navigate = useNavigate();
@@ -92,4 +92,4 @@ const AdminDashboardLayout = () => {
   );
 };
 
-export default AdminDashboardLayout;
+export default UserDashboardLayout;

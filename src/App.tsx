@@ -3,7 +3,7 @@ import { landingRoutes } from "./routes/landing-routes";
 import {createBrowserRouter, RouterProvider} from "react-router-dom"
 import { authRoutes } from "./routes/auth-routes";
 
-const router = createBrowserRouter([...landingRoutes, ...authRoutes])
+const router = createBrowserRouter([...landingRoutes, ...authRoutes, ...])
 function App() {
   return (
     <ChakraProvider>
