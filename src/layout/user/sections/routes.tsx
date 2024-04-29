@@ -20,11 +20,11 @@ export const Routes = [
   {
     name: 'Dashboard',
     icon: <MdOutlineDashboard className="text-xl" />,
-    route: '/user/dashboard',
+    route: '/user',
     submenu: [],
   },
   {
-    name: 'Membership Plans',
+    name: 'Membership',
     icon: <HiOutlineUsers className="text-xl" />,
     route: '/user/plans',
     submenu: [],

@@ -1,6 +1,7 @@
 
 import UserDashboardLayout from "../layout/user";
 import UserDashboard from "../pages/user/dashboard";
+import UserMembership from "../pages/user/membership";
 
 export const userRoutes = [
     {
@@ -10,6 +11,10 @@ export const userRoutes = [
           {
             index: true,
             element: <UserDashboard/>,
+          },
+          {
+            path: 'plans',
+            element: <UserMembership/>,
           },
         ],
       },

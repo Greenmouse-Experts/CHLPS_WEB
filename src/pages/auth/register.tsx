@@ -6,7 +6,7 @@ const RegisterPage = () => {
   const navigate = useNavigate();
   return (
     <>
-      <div className="lg:bg-primary min-h-[100vh]">
+      <div className="lg:bg-auth min-h-[100vh]">
         <div className="w-full h-full bg-login">
           <div className="box h-full place-center lg:py-24">
             <Link to="/" className="lg:hidden absolute top-6 left-2 lg:left-6">

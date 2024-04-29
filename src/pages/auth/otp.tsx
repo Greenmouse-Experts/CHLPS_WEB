@@ -27,7 +27,7 @@ const VerifyOtp = () => {
   };
   return (
     <>
-      <div className="lg:bg-primary lg:h-screen">
+      <div className="lg:bg-auth lg:h-screen">
         <div className="w-full h-full bg-login">
           <div className="box h-full place-center">
             <Link to="/" className="lg:hidden absolute top-6 left-2 lg:left-6">

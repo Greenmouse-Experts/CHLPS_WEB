@@ -156,6 +156,10 @@
   .bg-primary {
     background: #260791;
   }
+  .bg-auth{
+    background: rgb(38,7,145);
+background: linear-gradient(0deg, rgba(38,7,145,1) 0%, rgba(38,7,145,0.8814119397759104) 33%, rgba(38,7,145,0.7861738445378151) 66%, rgba(38,7,145,0.6741290266106443) 98%);
+  }
 
   .bg-pri {
     background: #feb470;
@@ -163,6 +167,14 @@
 
   .bg-light {
     background: #f1f1f1;
+  }
+.bg-circle-grad{
+  background: rgb(38,7,145);
+background: radial-gradient(circle, rgba(38,7,145,0.7889749649859944) 0%, rgba(38,7,145,1) 100%);
+}
+  .bg-my-light{
+    background: rgb(241,241,241);
+background: linear-gradient(0deg, rgba(241,241,241,0.6573223039215687) 0%, rgba(241,241,241,0.713344712885154) 33%, rgba(241,241,241,0.8842130602240896) 49%, rgba(241,241,241,1) 72%);
   }
 
   .bg-fit {
@@ -218,5 +230,30 @@
     display: flex;
     justify-content: center;
     align-items: center;
+  }
+  .bg-background {
+    width: 100%;
+    height: 100%;
+    --s: 200px; /* control the size */
+    --c1: #260791;
+    --c2: #5c4f89;
+    --c3: #422e89;
+  
+    background: repeating-conic-gradient(
+          from 30deg,
+          #0000 0 120deg,
+          var(--c3) 0 180deg
+        )
+        calc(0.5 * var(--s)) calc(0.5 * var(--s) * 0.577),
+      repeating-conic-gradient(
+        from 30deg,
+        var(--c1) 0 60deg,
+        var(--c2) 0 120deg,
+        var(--c3) 0 180deg
+      );
+    background-size: var(--s) calc(var(--s) * 0.577);
+  }
+  .bg-plans{
+    background-image: url('../src/assets/group2.jpeg');
   }
 }
