@@ -4,18 +4,18 @@ import { Link, useLocation } from "react-router-dom";
 import { BiLogOutCircle } from "react-icons/bi";
 import { BsGear } from "react-icons/bs";
 import logo from '../../../assets/logo.png'
-// import useModal from "../../../../../../hooks/useModal";
-// import LogoutModal from "../../../../auth/LogoutModal";
+import useDialog from "../../../hooks/useDialog";
+import LogoutModal from "../../../lib/modules/auth/logout-modal";
 
 const SidebarLayout = () => {
   const path = useLocation();
-  // const { Modal, setShowModal } = useModal();
+  const { Dialog, setShowModal } = useDialog();
 
   return (
-    <div className="left-0 top-0 fixed lg:w-[250px] overflow-y-hidden text-white">
+    <div className="left-0 top-0 fixed lg:w-[250px] overflow-y-hidden ">
       <Sidebar
         customBreakPoint="1024px"
-        className="h-screen overflow-y-hidden scroll-pro fs-700 fw-500 px-4"
+        className="h-screen overflow-y-hidden scroll-pro fw-500 px-4"
         backgroundColor=""
       >
         <div className="flex justify-center py-6 lg:py-9 lg:pb-8 items-center">
@@ -86,16 +86,16 @@ const SidebarLayout = () => {
           </MenuItem>
           <MenuItem
             icon={<BiLogOutCircle className="text-xl" />}
-            // onClick={() => setShowModal(true)}
+            onClick={() => setShowModal(true)}
             className=""
           >
             <p className="fs-400">Logout</p>
           </MenuItem>
         </Menu>
       </Sidebar>
-      {/* <Modal title="" size="xs">
+      <Dialog title="" size="xs">
         <LogoutModal CloseModal={() => setShowModal(false)} />
-      </Modal> */}
+      </Dialog>
     </div>
   );
 };

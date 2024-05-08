@@ -26,19 +26,45 @@ export const Routes = [
   {
     name: 'Membership',
     icon: <HiOutlineUsers className="text-xl" />,
-    route: '/user/plans',
-    submenu: [],
-  },
-  {
-    name: 'Tickets',
-    icon: <BsReceiptCutoff className="text-xl" />,
-    route: '/user/tikets',
-    submenu: [],
+    route: '/',
+    submenu: [
+      {
+        name: 'My Membership',
+        icon: <HiOutlineUsers className="text-xl" />,
+        route: '/user/membership',
+        submenu: [],
+      },
+      {
+        name: 'Membership Plans',
+        icon: <HiOutlineUsers className="text-xl" />,
+        route: '/user/plans',
+        submenu: [],
+      },
+    ],
   },
   {
     name: 'Certificate',
     icon: <PiCertificate className="text-xl" />,
     route: '/user/certify',
+    submenu: [
+      {
+        name: 'My Certificates',
+        icon: <PiCertificate className="text-xl" />,
+        route: '/user/my-certify',
+        submenu: [],
+      },
+      {
+        name: 'Apply Certificate',
+        icon: <PiCertificate className="text-xl" />,
+        route: '/user/certify',
+        submenu: [],
+      },
+    ],
+  },
+  {
+    name: 'Tickets',
+    icon: <BsReceiptCutoff className="text-xl" />,
+    route: '/user/tickets',
     submenu: [],
   },
   {

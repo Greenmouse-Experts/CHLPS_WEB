@@ -23,7 +23,7 @@ const LogoutModal: FC<Props> = ({ CloseModal }) => {
         <Button
           title="Cancel"
           onClick={CloseModal}
-          altClassName="px-6 py-2 fw-600 text-grad border rounded text-primary hover:scale-x-110 duration-100"
+          altClassName="px-6 py-2 rounded-full fw-600 text-grad border rounded text-primary hover:scale-x-110 duration-100"
         />
         <Button
           title="Logout"

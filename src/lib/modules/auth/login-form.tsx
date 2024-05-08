@@ -31,7 +31,7 @@ const LoginForm = () => {
         setIsBusy(false);
         if (data.data.account_type === "User") {
           toast.success("Login Successful");
-          localStorage.setItem("chlps_token", data.token);
+          sessionStorage.setItem("chlps_token", data.token);
           saveUser({
             name: `${data.data.first_name} ${data.data.last_name}`,
             email: data.data.email,

@@ -5,6 +5,19 @@
 * {
   font-family: "Montserrat", sans-serif;
 }
+.css-jn69v9{
+  position: relative !important;
+  top: -2px !important;
+  width: 9px !important;
+  height: 9px !important;
+}
+.css-1cuxlhl{
+  position: relative !important;
+  top: -2px !important;
+}
+.css-12w9als{
+  font-size: 14px !important;
+}
 
 @layer components {
 
@@ -255,5 +268,8 @@ background: linear-gradient(0deg, rgba(241,241,241,0.6573223039215687) 0%, rgba(
   }
   .bg-plans{
     background-image: url('../src/assets/group2.jpeg');
+  }
+  .bg-cert{
+    background-image: url('https://www.accrete.in/wp-content/uploads/2020/10/Quality-Banner.jpg');
   }
 }
