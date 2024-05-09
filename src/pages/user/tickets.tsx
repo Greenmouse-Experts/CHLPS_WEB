@@ -22,7 +22,7 @@ const UserTickets = () => {
         </div>
       </div>
       <Dialog title="Add New Ticket" size="lg">
-        <AddNewTicketModal/>
+        <AddNewTicketModal close={() => setShowModal(false)}/>
       </Dialog>
     </div>
   );

@@ -19,3 +19,9 @@ export const APPLY_FOR_MEMBERSHIP = `member/membership/apply`
 // certification endpoint
 export const GET_CERTIFICATION = `member/certifications`
 export const GET_USER_CERTIFICATION = `member/certifications`
+
+// tickets endpoint
+export const GET_TICKETS = `member/tickets`
+export const CREATE_TICKET = `member/tickets`
+export const UPDATE_TICKET = `member/tickets/update`
+export const DELETE_TICKET = `member/tickets/delete`
