@@ -1,10 +1,10 @@
 import {
+  MdEventNote,
   MdOutlineDashboard, MdOutlineShoppingCart,
 } from 'react-icons/md';
 import { HiOutlineUsers } from "react-icons/hi2";
 import {  BiSupport } from 'react-icons/bi';
 import { IoNotificationsCircleOutline } from "react-icons/io5";
-import { BsReceiptCutoff } from 'react-icons/bs';
 import { PiCertificate } from 'react-icons/pi';
 export interface RouteType {
   name:string;
@@ -62,9 +62,9 @@ export const Routes = [
     ],
   },
   {
-    name: 'Tickets',
-    icon: <BsReceiptCutoff className="text-xl" />,
-    route: '/user/tickets',
+    name: 'Events',
+    icon: <MdEventNote className="text-xl" />,
+    route: '/user/events',
     submenu: [],
   },
   {
@@ -80,9 +80,9 @@ export const Routes = [
     submenu: [],
   },
   {
-    name: 'Support',
+    name: 'Support Tickets',
     icon: <BiSupport className="text-xl" />,
-    route: '/user/support',
+    route: '/user/tickets',
     submenu: [],
   },
 ]

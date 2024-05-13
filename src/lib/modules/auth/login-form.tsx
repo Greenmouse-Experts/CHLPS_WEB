@@ -19,7 +19,7 @@ const LoginForm = () => {
     setUserDetail({ ...userDetail, [name]: value });
   };
 
-  const handleSubmit = async (e: any) => {
+  const handleSubmit = async (e:React.FormEvent) => {
     e.preventDefault();
     setIsBusy(true);
     const payload = {
@@ -42,6 +42,9 @@ const LoginForm = () => {
             id: data.data.id,
             account: data.data.account_type,
             joined: data.data.email_verified_at,
+            username:data.data.username,
+            member_id: data.data.membership_id,
+            subscribed: data.data.isSubscribed,
             un_id: ''
           });
           navigate("/user");

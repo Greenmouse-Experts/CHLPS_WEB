@@ -94,3 +94,102 @@ export const generatePaginationNumbers = (
   }
   return paginationNumbers;
 };
+
+export const FormatStatus = {
+  Active: (
+    <p className="w-28 text-center py-1 text-green-800 bg-green-100 border border-green-800 rounded">
+      Active
+    </p>
+  ),
+  active: (
+    <div className="flex items-center gap-x-2">
+      <span className="bg-green-600 w-4 h-4 circle"></span>{" "}
+      <span className="fw-500 text-green-600">Active</span>
+    </div>
+  ),
+  inactive: (
+    <div className="flex items-center gap-x-2">
+      <span className="bg-orange-600 w-4 h-4 circle"></span>{" "}
+      <span className="fw-500 text-orange-600">Inctive</span>
+    </div>
+  ),
+  Deactivate: (
+    <p className="w-28 text-center py-1 text-orange-800 bg-orange-100 border border-orange-800 rounded">
+      Inactive
+    </p>
+  ),
+  Inactive: (
+    <p className="w-28 text-center py-1 fw-500 text-orange-800 bg-orange-100 border border-orange-800 rounded">
+      Inactive
+    </p>
+  ),
+  Flag: (
+    <p className="w-28 text-center py-1 text-red-800 bg-red-100 border border-red-800 rounded">
+      Flagged
+    </p>
+  ),
+  pending: (
+    <div className="flex items-center gap-x-2">
+      <span className="bg-orange-600 w-4 h-4 circle"></span>{" "}
+      <span className="fw-500 text-orange-600">Pending</span>
+    </div>
+  ),
+  ongoing: (
+    <div className="flex items-center gap-x-2">
+      <span className="bg-purple-600 w-4 h-4 circle"></span>{" "}
+      <span className="fw-500 text-purple-600">Ongoing</span>
+    </div>
+  ),
+  accepted: (
+    <p className="w-28 text-center py-1 text-green-800 bg-green-100 border border-green-800 rounded">
+      Accepted
+    </p>
+  ),
+  cleared: (
+    <p className="w-28 text-center py-1 text-blue-800 bg-blue-100 border border-blue-800 rounded">
+      Cleared
+    </p>
+  ),
+  paid: (
+    <div className="flex items-center gap-x-2">
+      <span className="bg-green-600 w-4 h-4 circle"></span>{" "}
+      <span className="fw-500 text-green-600">Paid</span>
+    </div>
+  ),
+  approved: (
+    <div className="flex items-center gap-x-2">
+      <span className="bg-green-600 w-4 h-4 circle"></span>{" "}
+      <span className="fw-500 text-green-600">Approved</span>
+    </div>
+  ),
+  completed: (
+    <div className="flex items-center gap-x-2">
+      <span className="bg-green-600 w-4 h-4 circle"></span>{" "}
+      <span className="fw-500 text-green-600">Completed</span>
+    </div>
+  ),
+  declined: (
+    <div className="flex items-center gap-x-2">
+      <span className="bg-red-600 w-4 h-4 circle"></span>{" "}
+      <span className="fw-500 text-red-600">Declined</span>
+    </div>
+  ),
+  confirmed: (
+    <div className="flex items-center gap-x-2">
+      <span className="bg-green-600 w-4 h-4 circle"></span>{" "}
+      <span className="fw-500 text-green-600">Confirmed</span>
+    </div>
+  ),
+  cancelled: (
+    <div className="flex items-center gap-x-2">
+      <span className="bg-red-600 w-4 h-4 circle"></span>{" "}
+      <span className="fw-500 text-red-600">Cancelled</span>
+    </div>
+  ),
+  failed: (
+    <div className="flex items-center gap-x-2">
+      <span className="bg-red-600 w-4 h-4 circle"></span>{" "}
+      <span className="fw-500 text-red-600">Failed</span>
+    </div>
+  ),
+};

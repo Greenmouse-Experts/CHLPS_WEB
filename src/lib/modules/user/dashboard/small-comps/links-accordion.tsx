@@ -16,12 +16,12 @@ const LinksAccordion = () => {
           <AccordionIcon />
         </AccordionButton>
         <AccordionPanel pb={4}>
-          <ul className="grid gap-3 list-disc pl-4 fs-500 fw-500">
-            <li>
-                <Link to={'/user/plans'} className="">Membership Plans</Link>
+          <ul className="grid grid-cols-3 gap-3 pl-4 fs-500 fw-500">
+            <li className="text-center">
+                <Link to={'/user/plans'} className=""><img src="https://cdn-icons-png.flaticon.com/512/2534/2534817.png" alt="membership" className="w-12 mx-auto" /><span>Membership Plans</span></Link>
             </li>
-            <li>
-                <Link to={'/user/plans'}>Membership Plans</Link>
+            <li className="text-center">
+                <Link to={'/user/certify'}><img src="https://cdn-icons-png.flaticon.com/512/3330/3330423.png" alt="cert" className="w-12 mx-auto"/><span></span>Apply Certificate</Link>
             </li>
           </ul>
         </AccordionPanel>

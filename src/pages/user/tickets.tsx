@@ -3,9 +3,16 @@ import HeaderText from "../../lib/components/header-text";
 import TicketAnalysis from "../../lib/modules/user/tickets/ticket-analysis";
 import useDialog from "../../hooks/useDialog";
 import AddNewTicketModal from "../../lib/modules/user/tickets/add-ticket-modal";
+import TicketList from "../../lib/modules/user/tickets/ticket-list";
+import { getTickets } from "../../services/api/ticket-api";
+import { useQuery } from "@tanstack/react-query";
 
 const UserTickets = () => {
     const {Dialog, setShowModal} = useDialog()
+    const { data, refetch } = useQuery({
+      queryKey: ["membership-tickets"],
+      queryFn: getTickets,
+    });
   return (
     <div>
       {" "}
@@ -18,11 +25,14 @@ const UserTickets = () => {
           </div>
         </div>
         <div className="mt-4 lg:mt-8">
-          <TicketAnalysis />
+          <TicketAnalysis items={data?.data} />
+        </div>
+        <div>
+          <TicketList items={data?.data}/>
         </div>
       </div>
       <Dialog title="Add New Ticket" size="lg">
-        <AddNewTicketModal close={() => setShowModal(false)}/>
+        <AddNewTicketModal close={() => setShowModal(false)} refetch={refetch}/>
       </Dialog>
     </div>
   );

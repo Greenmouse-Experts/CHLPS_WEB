@@ -7,8 +7,9 @@ import BeatLoader from "react-spinners/BeatLoader";
 
 interface Props {
   close: () => void;
+  refetch: () => void;
 }
-const AddNewTicketModal: FC<Props> = ({ close }) => {
+const AddNewTicketModal: FC<Props> = ({ close, refetch }) => {
   const [isBusy, setIsBusy] = useState(false);
   const [inputDetails, setInputDetails] = useState({
     subject: "",
@@ -28,6 +29,7 @@ const AddNewTicketModal: FC<Props> = ({ close }) => {
       .then(() => {
         toast.success("Ticket created");
         setIsBusy(false);
+        refetch()
         close()
       })
       .catch(() => {

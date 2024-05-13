@@ -7,6 +7,7 @@ import UserMembership from "../pages/user/membership";
 import MyMembership from "../pages/user/my-mebership";
 import MyCertification from "../pages/user/my-certification";
 import UserTickets from "../pages/user/tickets";
+import UserProfile from "../pages/user/settings";
 
 export const userRoutes = [
     {
@@ -40,6 +41,22 @@ export const userRoutes = [
           {
             path: 'tickets',
             element: <UserTickets/>,
+          },
+          {
+            path: 'profile',
+            element: <UserProfile/>
+          },
+          {
+            path: 'notify',
+            element: <></>
+          },
+          {
+            path: 'payments',
+            element: <></>,
+          },
+          {
+            path: 'events',
+            element: <></>
           },
         ],
       },
