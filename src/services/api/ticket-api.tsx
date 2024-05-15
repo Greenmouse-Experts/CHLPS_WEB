@@ -19,9 +19,9 @@ export const getTickets = async () => {
       .then((response) => response.data);
   };
 
-  export const updateTicket = async () => {
+  export const updateTicket = async (payload: any) => {
     return axios
-      .get(`${ENDPOINT.UPDATE_TICKET}`)
+      .post(`${ENDPOINT.UPDATE_TICKET}`, payload)
       .then((response) => response.data);
   };
 

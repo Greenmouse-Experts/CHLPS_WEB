@@ -28,7 +28,7 @@ const UserTickets = () => {
           <TicketAnalysis items={data?.data} />
         </div>
         <div>
-          <TicketList items={data?.data}/>
+          <TicketList items={data?.data} refetch={refetch}/>
         </div>
       </div>
       <Dialog title="Add New Ticket" size="lg">
