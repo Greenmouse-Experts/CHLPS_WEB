@@ -5,14 +5,14 @@ import pattern from '../../../../assets/pattern.svg'
 
 const Certification = () => {
   return (
-    <div className="relative pt-8">
-      <div className="bg-[#1C1C1C]">
+    <div className="relative bg-[url(https://res.cloudinary.com/greenmouse-tech/image/upload/v1716823031/chlps/Rectangle_52_jbhkwm.png)] bg-cover">
+      <div className="">
         <div className="section">
           <div className="box">
             <div className="lg:flex flex-row-reverse gap-x-12 items-center">
               <div className="lg:w-6/12">
                 <img
-                  src="https://res.cloudinary.com/greenmouse-tech/image/upload/v1713789464/chlps/Group_48097535_tgntyq.png"
+                  src="https://res.cloudinary.com/greenmouse-tech/image/upload/v1716823030/chlps/Group_48097535_t528cm.png"
                   alt="certificate"
                   className="w-full"
                 />
@@ -33,7 +33,7 @@ const Certification = () => {
                   programs are listed below.
                 </p>
                 <div>
-                  <Link to={""} className="text-pri fs-500 fw-500">
+                  <Link to={"/auth/register"} className="text-pri fs-500 fw-500">
                     <BtnContent
                       name="Apply Now"
                       icon={
@@ -47,7 +47,7 @@ const Certification = () => {
           </div>
         </div>
       </div>
-      <img src={pattern} alt="pattern" className="absolute w-12 lg:w-24 top-2 lg:-top-4 left-6"/>
+      <img src={pattern} alt="pattern" className="absolute w-12 lg:w-24 top-2 lg:-top-12 left-6"/>
     </div>
   );
 };

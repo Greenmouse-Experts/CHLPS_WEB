@@ -8,9 +8,9 @@ const Unlocking = () => {
     "Significantly enhances and improves the performance of your organisation.",
   ];
   return (
-    <div className="bg-[#F3F6FD]">
+    <div className="bg-[url(https://res.cloudinary.com/greenmouse-tech/image/upload/v1716823031/chlps/Rectangle_52_jbhkwm.png)] bg-cover">
       <div className="section">
-        <div className="box">
+        <div className="box text-white">
           <div>
             <p className="fw-600 text-3xl text-center">
               Unlocking Lifelong Learning
@@ -23,10 +23,15 @@ const Unlocking = () => {
             <div className="mt-12 grid lg:grid-cols-3 gap-5">
               {stages.map((item, i) => (
                 <div
-                  className={`rounded-[13px] p-4 lg:p-8 ${
-                    i === 0 ? "bg-primary text-white" : "bg-white"
+                  className={`rounded-[13px] flex gap-x-2 p-4 lg:p-8 ${
+                    i === 0 ? "bg-[#FDB139] text-black text-[15px]" : "bg-white text-black"
                   }`}
                 >
+                  {i === 0 ? (
+                    <img src="https://res.cloudinary.com/greenmouse-tech/image/upload/v1716823031/chlps/speaker_1_yfdwuo.png"  alt="icon-img" className="w-12 h-12" />
+                  ) : (
+                    <img src="https://res.cloudinary.com/greenmouse-tech/image/upload/v1716823031/chlps/speaker_1_2_enqwkh.png" alt="icon-img" className="w-12 h-12" />
+                  )}
                   {item}
                 </div>
               ))}

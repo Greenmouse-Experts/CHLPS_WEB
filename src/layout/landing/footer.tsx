@@ -60,7 +60,7 @@ const LandingFooter = () => {
   ]
   return (
     <div className="">
-      <div className="bg-[#1C1C1C]">
+      <div className="bg-[#1C1C1C] bg-[url(https://res.cloudinary.com/greenmouse-tech/image/upload/v1716824348/chlps/Group_48097540_xi8o5t.png)] bg-cover">
         <div className="py-12 lg:pt-16">
           <div className="box text-white">
             <div className='lg:flex border-b border-[#4B4B4B] pb-12 justify-between items-center'>

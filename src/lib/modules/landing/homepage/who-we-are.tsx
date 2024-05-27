@@ -4,12 +4,12 @@ import { BsArrowUpRightCircleFill } from "react-icons/bs";
 
 const WhoWeAre = () => {
   return (
-    <div className="section lg:py-6">
+    <div className="section lg:py-6 lg:pb-12 bg-[url(https://res.cloudinary.com/greenmouse-tech/image/upload/v1716823030/chlps/Group_48097537_h41y8i.png)] bg-cover">
       <div className="box">
         <div className="lg:flex items-center">
           <div className="lg:w-6/12 relative lg:-left-12">
             <img
-              src="https://res.cloudinary.com/greenmouse-tech/image/upload/v1713788796/chlps/Group_3_1_rdqvuu.png"
+              src="https://res.cloudinary.com/greenmouse-tech/image/upload/v1716823036/chlps/Group_3_1_dg7s6q.png"
               alt="who are we"
               className="w-full"
             />

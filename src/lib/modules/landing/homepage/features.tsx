@@ -3,25 +3,25 @@ import { PiArrowUpRightBold } from "react-icons/pi";
 
 const LandingFeatures = () => {
   return (
-    <div className="section">
+    <div className="section bg-[url(https://res.cloudinary.com/greenmouse-tech/image/upload/v1716823031/chlps/Group_48097538_aorsul.png)] bg-cover">
       <div className="box lg:py-6">
         <div className="lg:flex gap-6 lg:gap-12">
           <div className="lg:w-6/12">
             <div className="w-full h-[430px] md:h-[480px] lg:h-[570px] bg-[url(https://res.cloudinary.com/greenmouse-tech/image/upload/v1713789516/chlps/Vector_3_yaa5av.png)] bg-fit flex items-end p-8">
-              <div className="relative text-white p-6 lg:px-8 w-full rounded-[20px]">
-                <div className="relative z-10 pb-7">
+              <div className="relative text-white p-6 lg:px-8 w-full rounded-[20px] bg-[#260791]">
+                <div className="relative z-10 text-white pb-7">
                   <p className="lg:text-2xl fw-500">Comprehensive Strategies</p>
                   <p className="mt-6 lg:text-lg">
                     Loss Prevention operations and management in all its
                     ramifications
                   </p>
                   <div className="flex justify-end">
-                    <div className="absolute bottom-0 righ-5 backdrop-blur-lg w-[50px] h-[50px] lg:w-[70px] lg:h-[70px] circle place-center cursor-pointer shadow-lg">
+                    <div className="absolute bottom-0 righ-5 bg-white text-black backdrop-blur-lg w-[50px] h-[50px] lg:w-[70px] lg:h-[70px] circle place-center cursor-pointer shadow-lg">
                       <PiArrowUpRightBold className="text-3xl lg:text-4xl" />
                     </div>
                   </div>
                 </div>
-                <div className="backdrop-blur-sm rounded-[20px] bg-white/30 top-0 left-0 absolute z-0 w-full h-full"></div>
+                {/* <div className="backdrop-blur-sm rounded-[20px] bg-white/30 top-0 left-0 absolute z-0 w-full h-full"></div> */}
               </div>
             </div>
           </div>

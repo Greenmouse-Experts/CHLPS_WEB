@@ -43,7 +43,7 @@ const HeroSwipe = () => {
                       Learn More
                     </Link>
                     <Link
-                      to={""}
+                      to={"/auth/register"}
                       className="btn-primary fs-500 bg-white !text-primary hover:!text-white rounded-full px-6 py-2"
                     >
                       <BtnContent name="Apply Now" icon={<GoArrowUpRight />} />
@@ -78,7 +78,7 @@ const HeroSwipe = () => {
                       Learn More
                     </Link>
                     <Link
-                      to={""}
+                      to={"/auth/register"}
                       className="btn-primary fs-500 bg-white !text-primary hover:!text-white rounded-full px-6 py-2"
                     >
                       <BtnContent name="Apply Now" icon={<GoArrowUpRight />} />
@@ -113,7 +113,7 @@ const HeroSwipe = () => {
                       Learn More
                     </Link>
                     <Link
-                      to={""}
+                      to={"/auth/register"}
                       className="btn-primary fs-500 bg-white !text-primary hover:!text-white rounded-full px-6 py-2"
                     >
                       <BtnContent name="Apply Now" icon={<GoArrowUpRight />} />
@@ -148,7 +148,7 @@ const HeroSwipe = () => {
                       Learn More
                     </Link>
                     <Link
-                      to={""}
+                      to={"/auth/register"}
                       className="btn-primary fs-500 bg-white !text-primary hover:!text-white rounded-full px-6 py-2"
                     >
                       <BtnContent name="Apply Now" icon={<GoArrowUpRight />} />

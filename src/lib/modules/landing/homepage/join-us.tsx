@@ -8,7 +8,7 @@ const JoinUs = () => {
     "37+ Countries",
   ];
   return (
-    <div className="section">
+    <div className="section bg-[url(https://res.cloudinary.com/greenmouse-tech/image/upload/v1716823031/chlps/Group_48097538_aorsul.png)] bg-cover">
       <div className="box">
         <div className="rounded-[19px] bg-[#1C1C1C] p-8 lg:flex items-center gap-x-8 lg:gap-x-16">
           <div className="lg:w-5/12">
