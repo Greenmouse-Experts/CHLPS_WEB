@@ -112,7 +112,7 @@ const LandingHeader = () => {
                       pathname === "/careers" && "text-primary fw-600"
                     }`}
                   >
-                    Career
+                    Careers
                   </Link>
                 </li>
                 <li>

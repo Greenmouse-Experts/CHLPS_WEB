@@ -51,7 +51,7 @@ const MobileMenu: FC<Props> = ({ close }) => {
             </li>
             <li className="border-b">
               <Link to={'/'} className="px-3">
-                Career
+                Careers
               </Link>
             </li>
             <li className="border-b">

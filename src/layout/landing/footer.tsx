@@ -22,7 +22,7 @@ const LandingFooter = () => {
       route: "/"
     },
     {
-      name: "Career",
+      name: "Careers",
       route: "/"
     },
     {
