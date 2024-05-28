@@ -4,8 +4,7 @@ import { useState } from "react";
 import { TiThMenuOutline } from "react-icons/ti";
 import { Link, useLocation } from "react-router-dom";
 import MobileMenu from "./mobileMenu";
-import { CiMail } from "react-icons/ci";
-import { PiPhoneCall, PiPhoneCallBold, PiPhoneCallLight } from "react-icons/pi";
+import { PiPhoneCall } from "react-icons/pi";
 import { HiOutlineLocationMarker } from "react-icons/hi";
 import { MdOutlineMailOutline } from "react-icons/md";
 
